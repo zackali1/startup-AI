@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  --background: 0 0% 7%;
+  --foreground: 0 0% 98%;
+  --card: 0 0% 9%;
+  --card-foreground: 0 0% 98%;
+  --popover: 0 0% 9%;
+  --popover-foreground: 0 0% 98%;
+  --primary: 272 100% 64%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 217 91% 60%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  --accent: 272 100% 64%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 0 0% 15%;
+  --input: 0 0% 15%;
+  --ring: 272 100% 64%;
+  --radius: 0.75rem;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+.gradient-button {
+  background: linear-gradient(90deg, #e233ff 0%, #3347ff 100%);
+  transition: opacity 0.2s ease;
+}
+
+.gradient-button:hover {
+  opacity: 0.9;
+}
+
+.hero-gradient {
+  background: radial-gradient(circle at 50% 50%, rgba(226, 51, 255, 0.1) 0%, rgba(51, 71, 255, 0.1) 100%);
+}
